@@ -89,7 +89,7 @@ Example: https://reqres.in/api/users?per_page=10&page=1
 
 User Detail
 
-📥 Download Release APK: https://drive.google.com/file/d/1LzTaSAtzvb6YGCnIlWxPxrRB1tzj-tXa/view?usp=sharing
+📥 Download Release APK: https://drive.google.com/file/d/1BC-TPvIfxQhcP7xhEhnEKctWPQBLuvlP/view?usp=sharing
 
 (Uploaded for review and testing)
 
