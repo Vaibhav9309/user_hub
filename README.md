@@ -1,25 +1,25 @@
 📱 Flutter Developer Assignment – User List App
 🧩 Overview
 
-This Flutter application demonstrates state management (Bloc), API integration, pagination, search functionality, and clean UI/UX design following best Flutter architecture practices.
-The app fetches users from the public API https://reqres.in/api/users
-and displays them with pagination, caching, pull-to-refresh, and error handling.
+A Flutter application demonstrating state management (BLoC), REST API integration, pagination, search, and responsive UI/UX following Clean Architecture principles.
+The app fetches user data from the ReqRes API
+and supports offline caching, pull-to-refresh, infinite scrolling, and error handling for real-world reliability.
 
 🚀 Features
 Feature	Description
-👥 User List Screen	Displays list of users with name, email, and profile picture
-🔍 Search Users	Filter users by name using a search bar
-♻️ Pagination	Infinite scrolling with incremental API page loading
-📄 User Detail Screen	Shows user profile, name, email, phone, website, and company
-🧭 Navigation	Smooth navigation between List and Detail screens
-🔄 Pull to Refresh	Refresh the list with updated data
-🌗 Light & Dark Mode	Adaptive theme support with toggle
-⚡ Caching (SharedPreferences)	Stores user data locally for offline access
-📡 Error Handling	Graceful UI states for loading, empty, and failure scenarios
-🌍 Offline Support	Displays retry button on network failure
-🧱 Clean Architecture	Follows presentation → domain → data layer separation
-🧠 Dependency Injection	Managed via get_it
-🧪 Optional Tests	Includes widget and API test structure (optional)
+👥 User List Screen	Displays users with name, email, and avatar
+🔍 Search Users	Filter users by name in real time
+♻️ Pagination	Infinite scrolling using API page queries
+📄 User Detail Screen	Shows user details like name, email, and phone
+🧭 Navigation	Seamless transition between list and detail screens
+🔄 Pull to Refresh	Refresh user data instantly
+🌗 Light & Dark Mode	Dynamic theme switching
+⚡ Caching (SharedPreferences)	Local storage for offline access
+📡 Error Handling	Dedicated UI for loading, empty, and error states
+🌍 Offline Support	Displays retry option when network is unavailable
+🧱 Clean Architecture	Modular separation of presentation, domain, and data layers
+🧠 Dependency Injection	Managed using get_it
+🧪 Optional Tests	Includes structure for widget and API tests
 🧰 Tech Stack
 Category	Library
 State Management	flutter_bloc
@@ -31,7 +31,7 @@ Dependency Injection	get_it
 Caching	shared_preferences
 
 UI Components	Flutter Material Widgets
-Architecture	Clean Architecture (Presentation, Domain, Data Layers)
+Architecture	Clean Architecture (Presentation → Domain → Data)
 📦 Folder Structure
 lib/
 ├── core/
@@ -59,71 +59,68 @@ lib/
 │
 └── main.dart
 
-⚙️ How to Run the Project
+⚙️ Getting Started
 Prerequisites
 
 Flutter SDK (latest stable version)
 
 Android Studio / VS Code
 
-Device or Emulator setup
+A connected device or emulator
 
-Steps
+Installation
 # Clone the repository
-git clone https://github.com/YOUR_GITHUB_USERNAME/flutter-user-list-app.git
+git clone https://github.com/Vaibhav9309/user_hub.git
 
-# Navigate to project directory
+# Navigate to the project directory
 cd flutter-user-list-app
 
 # Install dependencies
 flutter pub get
 
-# Run the project
+# Run the application
 flutter run
 
-🧪 API Endpoint Used
+🧪 API Endpoint
 
-Base URL:
-https://reqres.in/api/users
+Base URL: https://reqres.in/api/users
 
-Example:
-https://reqres.in/api/users?per_page=10&page=1
+Example: https://reqres.in/api/users?per_page=10&page=1
 
-🧩 Problem Scenarios Handled
+User Detail
+
+📥 Download Release APK: https://drive.google.com/file/d/1LzTaSAtzvb6YGCnIlWxPxrRB1tzj-tXa/view?usp=sharing
+
+(Uploaded for review and testing)
+
+
+⚡ Problem Scenarios Handled
 Scenario	Behavior
-⏳ Slow API Response	Shows loading spinner with timeout handling
-📶 No Internet	Displays error message with retry button
-🕳️ Empty Response	Displays friendly “No users found” message
-🔎 Search Edge Cases	Works for special characters/spaces
-🔙 Navigation	Maintains proper state without leaks
-📱 Responsiveness	Adapts layout for all screen sizes
-🧹 Cache Management	Clears outdated cached data on refresh
-🧭 Screens Overview
+⏳ Slow API Response	Displays loading indicator and timeout handling
+📶 No Internet	Shows offline message with retry button
+🕳️ Empty Response	Displays “No users found” UI
+🔎 Search Edge Cases	Handles special characters and spaces
+🔙 Navigation	Ensures proper state cleanup and memory safety
+📱 Responsiveness	Adapts layout for multiple screen sizes
+🧹 Cache Management	Clears outdated data on refresh
+📱 Screens Overview
+
+(Replace placeholders with actual screenshots)
+
 Screen	Light Mode	Dark Mode
 User List
 
 
-User Detail
-
-
-(Replace with actual screenshots from your app if possible)
-
-📥 APK Download
-
-👉 Download Release APK
-
-(Uploaded on OneDrive for quick access)
-
-📄 Evaluation Criteria Reference
+📄 Evaluation Criteria
 Criteria	Weight
 Code Quality & Structure	30%
 Functionality & Features	30%
-UI/UX Design	20%
+UI/UX Design & Responsiveness	20%
 Error Handling & Optimization	10%
 Bonus (Tests)	10%
-🧑‍💻 Author
+👨‍💻 Author
 
 Developer: Vaibhav Shelke
-📧 Email: vaibhavshelke2901@gmail.com
-🌐 GitHub: Vaibhav9309
-🏙️ Location: Nashik, India
+📧 vaibhavshelke2901@gmail.com
+🌐 GitHub – Vaibhav9309
+🏙️ Nashik, India
